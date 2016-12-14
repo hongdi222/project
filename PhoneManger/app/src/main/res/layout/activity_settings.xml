@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuoxin.phone.activity.SettingsActivity">
+
+    <com.zhuoxin.phone.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.phone.view.ActionBarView>
+
+    <RelativeLayout
+        android:id="@+id/rl_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:text="开机启动" />
+
+        <ToggleButton
+            android:id="@+id/tb_start"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin"
+            android:background="@drawable/selector_togglebutton"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:text="通知图标" />
+
+        <ToggleButton
+            android:id="@+id/tb_notification"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin"
+            android:background="@drawable/selector_togglebutton"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:text="消息推送" />
+
+        <ToggleButton
+            android:id="@+id/tb_push"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin"
+            android:background="@drawable/selector_togglebutton"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:text="帮助说明" />
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_alignParentEnd="true"
+           android:src="@drawable/icon_pressed"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="25dp"
+           />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin"
+            android:text="关于我们" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_pressed"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
